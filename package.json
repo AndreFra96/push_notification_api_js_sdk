@@ -1,0 +1,27 @@
+{
+  "name": "push_notification_api",
+  "version": "1.0.0",
+  "description": "_API_per_invio_di_notifiche_push_personalizzate_agli_utenti_dellapplicazione_RCA_SUPPORTIl_servizio_di_assistenza_dellazienda_RCA_SRL_prevede_lutilizzo_di_unapplicazione_multipiattaforma__Android_iOS_Web_App_chiamata_RCA_SUPPORT_lo_scopo_principale_di_queste_api__linvio_di_notifiche_push_personalizzate_agli_utenti_dellapplicazione_Push_notification_tokenAd_ogni_dispositivo_client_dellapplicazione_viene_automaticamente_associato_un_token_necessario_per_inviare_una_notifica_push_diretta_al_dispositivo_Tutti_i_token_vengono_salvati_in_un_database_SQL_dove_sono_presenti_i_dati_sui_clienti_dellaziendaad_ogni_token_viene_associato_un_cliente_ed_un_locale__Firebase_Admin_SDK_e_Firebase_cloud_Messaging__FCMIl_servizio_utilizzato_per_linvio_delle_notifiche_push__FCM_ed__strutturato_in_questo_modo__Generatore_di_messaggi_e_target_____si_occupa_della_creazione_dei_messaggi_creando_delle_triplette_titolo_descrizione_token_che_vengono_inviate_al_backend_FCM_tramite_Firebase_Admin_SDK__FCM_backend_legge_i_dati_inviati_dal_generatore_genera_i_metadati_del_messaggio_e_li_invia_agli_instradatori__Instradatori_di_messaggi_specifici_della_piattaforma______Android_Trasport_Layer_per_dispositivi_Android______iOS__APNs_per_dispositivi_iOS______Web_Push_per_app_web__SDK_sul_dispositivo_viene_visualizzata_la_notifica_o_il_messaggio_viene_gestito_in_base_allo_stato_in_primo_piano__in_background_dellapp_e_a_qualsiasi_logica_dellapplicazione_pertinente__Analisi_dei_requisitiLo_scopo_di_questa_API__quello_di_Generatore_di_messaggi_e_target_in_particolare_si_occupa_di1__Interazione_con_database_SQL_dove_sono_salvati_i_dati2__Utilizzo_del_servizio_FCM__Firebase_Cloud_Messaging_per_linvio_delle_notifiche_push",
+  "license": "Unlicense",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "superagent": "3.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "expect.js": "~0.3.1",
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3"
+  }
+}
